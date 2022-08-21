@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 class RepeatedCharacter {
 	public String findMaxChar(String str) {
-		char[] array = str.toCharArray();
+        char[] array = str.toCharArray();
         int maxCount = 1;
         char maxChar = array[0];
         for(int i = 0, j = 0; i < str.length() - 1; i = j){
-        	int count = 1;
+            int count = 1;
             while (++j < str.length() && array[i] == array[j]) {
                 count++;
             }
