@@ -46,8 +46,7 @@ public class InsertApp {
 		} catch(Exception e) {
 			e.printStackTrace();
 		} finally {
-			JdbcUtil.closeConnection(null, pstmt, connection);
-			
+			JdbcUtil.closeConnection(null, pstmt, connection);	
 			if (sc != null) {
 				sc.close();
 			}
